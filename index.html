@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人主页 | 我的作品与简介</title>
+    <meta
+      name="description"
+      content="一个简洁的个人主页，用于展示个人简介、技能、项目经历与联系方式。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top">个人主页</a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#skills">技能</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Hello, welcome</p>
+          <h1>你好，我是<span>你的名字</span></h1>
+          <p class="hero-text">
+            我是一名关注技术、学习与实践的学生。这个网站用于展示我的个人简介、
+            项目经历、技能方向和联系方式。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">查看项目</a>
+            <a class="button secondary" href="#contact">联系我</a>
+          </div>
+        </div>
+
+        <div class="profile-panel" aria-label="个人信息卡片">
+          <img src="./assets/profile-card.svg" alt="个人主页插画" />
+          <div>
+            <strong>你的名字</strong>
+            <span>电气工程学院 / 本科生</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>关于我</h2>
+        </div>
+        <p class="wide-text">
+          这里可以写一段更真实的个人介绍，例如你的专业方向、竞赛经历、学生工作、
+          实习经历或正在学习的技术。保持简短清楚即可，让访问者快速了解你是谁、
+          擅长什么、正在寻找什么机会。
+        </p>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>技能方向</h2>
+        </div>
+        <div class="skill-grid">
+          <article>
+            <h3>编程基础</h3>
+            <p>C / Python / MATLAB，能够完成课程设计、数据处理和自动化脚本。</p>
+          </article>
+          <article>
+            <h3>工程实践</h3>
+            <p>熟悉实验报告、项目文档整理，具备持续学习和协作推进能力。</p>
+          </article>
+          <article>
+            <h3>内容表达</h3>
+            <p>能进行活动策划、宣传文案、PPT 制作和结构化信息呈现。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>项目经历</h2>
+        </div>
+        <div class="project-list">
+          <article class="project">
+            <div>
+              <span class="tag">课程项目</span>
+              <h3>智能控制小系统</h3>
+            </div>
+            <p>基于传感器采集与控制逻辑，实现一个简单的状态监测和响应流程。</p>
+          </article>
+          <article class="project">
+            <div>
+              <span class="tag">数据处理</span>
+              <h3>实验数据分析脚本</h3>
+            </div>
+            <p>使用 Python 整理实验数据，生成图表并输出结构化分析结果。</p>
+          </article>
+          <article class="project">
+            <div>
+              <span class="tag">校园工作</span>
+              <h3>活动宣传与组织</h3>
+            </div>
+            <p>参与学院活动策划、材料撰写、视觉排版和现场执行。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>保持联系</h2>
+          <p>
+            你可以把这里替换成真实邮箱、微信、GitHub、公众号或简历链接。
+          </p>
+        </div>
+        <div class="contact-card">
+          <a href="mailto:your.email@example.com">your.email@example.com</a>
+          <span>WeChat: your_wechat_id</span>
+          <span>GitHub: github.com/yourname</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 你的名字. Built with care.</p>
+    </footer>
+  </body>
+</html>
