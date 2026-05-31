@@ -3,20 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>个人主页 | 我的作品与简介</title>
+    <title>任璐 | 个人主页</title>
     <meta
       name="description"
-      content="一个简洁的个人主页，用于展示个人简介、技能、项目经历与联系方式。"
+      content="任璐的个人主页，展示新能源科学与工程、科创竞赛、学生工作、项目经历与荣誉成果。"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top">个人主页</a>
+      <a class="brand" href="#top">任璐</a>
       <nav class="nav" aria-label="主导航">
         <a href="#about">关于</a>
         <a href="#skills">技能</a>
         <a href="#projects">项目</a>
+        <a href="#honors">荣誉</a>
         <a href="#contact">联系</a>
       </nav>
     </header>
@@ -24,23 +25,28 @@
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Hello, welcome</p>
-          <h1>你好，我是<span>你的名字</span></h1>
+          <p class="eyebrow">Hebei University of Technology</p>
+          <h1>你好，我是<span>任璐</span></h1>
           <p class="hero-text">
-            我是一名关注技术、学习与实践的学生。这个网站用于展示我的个人简介、
-            项目经历、技能方向和联系方式。
+            河北工业大学电气工程学院新能源科学与工程专业本科生，关注智慧能源、
+            工程设计、数字孪生与学生组织治理，持续在科创竞赛、工程实践和团学工作中积累经验。
           </p>
+          <div class="stat-row" aria-label="个人亮点">
+            <span><strong>新能232班</strong>专业学习</span>
+            <span><strong>专业第7</strong>第二学年综测</span>
+            <span><strong>多项竞赛</strong>国家级与省级奖项</span>
+          </div>
           <div class="hero-actions">
             <a class="button primary" href="#projects">查看项目</a>
-            <a class="button secondary" href="#contact">联系我</a>
+            <a class="button secondary" href="#honors">荣誉成果</a>
           </div>
         </div>
 
         <div class="profile-panel" aria-label="个人信息卡片">
           <img src="./assets/yashen.jpg" alt="个人主页头像" />
           <div>
-            <strong>你的名字</strong>
-            <span>电气工程学院 / 本科生</span>
+            <strong>任璐</strong>
+            <span>电气工程学院 / 新能源科学与工程</span>
           </div>
         </div>
       </section>
@@ -51,10 +57,36 @@
           <h2>关于我</h2>
         </div>
         <p class="wide-text">
-          这里可以写一段更真实的个人介绍，例如你的专业方向、竞赛经历、学生工作、
-          实习经历或正在学习的技术。保持简短清楚即可，让访问者快速了解你是谁、
-          擅长什么、正在寻找什么机会。
+          我曾由机械设计制造及其自动化专业转入新能源科学与工程专业，结合机械设计、
+          电气控制与清洁能源方向开展学习和实践。课业方面，多门专业课程取得满绩；
+          科创方面，围绕太阳能联捕联储联供暖热系统、智能无线充电、赛车制动系统、
+          数控机床智能补偿等项目持续训练工程能力；学生工作方面，长期参与校团委团校
+          基层建设、活动统筹与制度流程优化。
         </p>
+      </section>
+
+      <section id="education" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Education</p>
+          <h2>教育与方向</h2>
+        </div>
+        <div class="info-grid">
+          <article>
+            <span class="tag">本科</span>
+            <h3>河北工业大学 · 电气工程学院</h3>
+            <p>新能源科学与工程专业，新能232班。第二学年综合测评位于专业第7名。</p>
+          </article>
+          <article>
+            <span class="tag">跨学科</span>
+            <h3>机械设计 + 新能源工程</h3>
+            <p>具备机械结构、工程制图、仿真分析和能源系统项目实践基础。</p>
+          </article>
+          <article>
+            <span class="tag">微专业</span>
+            <h3>复杂装备数字孪生</h3>
+            <p>辅修实验实训中心微专业，已修课程均取得优秀成绩，关注建模、仿真与智能运维。</p>
+          </article>
+        </div>
       </section>
 
       <section id="skills" class="section">
@@ -64,16 +96,16 @@
         </div>
         <div class="skill-grid">
           <article>
-            <h3>编程基础</h3>
-            <p>C / Python / MATLAB，能够完成课程设计、数据处理和自动化脚本。</p>
+            <h3>工程软件与仿真</h3>
+            <p>CATIA、AutoCAD、MATLAB / Simulink、ANSYS，用于建模、制图、系统仿真与结构分析。</p>
           </article>
           <article>
-            <h3>工程实践</h3>
-            <p>熟悉实验报告、项目文档整理，具备持续学习和协作推进能力。</p>
+            <h3>控制与嵌入式基础</h3>
+            <p>C语言与单片机、STM32 / C51 基础，具备课程设计、实验调试和系统实现经验。</p>
           </article>
           <article>
-            <h3>内容表达</h3>
-            <p>能进行活动策划、宣传文案、PPT 制作和结构化信息呈现。</p>
+            <h3>组织协作与表达</h3>
+            <p>擅长项目统筹、制度文档、活动策划、汇报材料和跨部门沟通。</p>
           </article>
         </div>
       </section>
@@ -86,24 +118,91 @@
         <div class="project-list">
           <article class="project">
             <div>
-              <span class="tag">课程项目</span>
-              <h3>智能控制小系统</h3>
+              <span class="tag">创新创业</span>
+              <h3>智电慧能——太阳能联捕联储联供暖热系统</h3>
             </div>
-            <p>基于传感器采集与控制逻辑，实现一个简单的状态监测和响应流程。</p>
+            <p>
+              作为项目创始人与总负责人，带领跨学科团队围绕光热技术、储能优化与智慧能源管理
+              完善清洁能源解决方案，项目立项河北工业大学大学生创新创业训练计划校级重点项目，
+              并获得“建行杯”河北省大学生创新大赛铜奖。
+            </p>
           </article>
           <article class="project">
             <div>
-              <span class="tag">数据处理</span>
-              <h3>实验数据分析脚本</h3>
+              <span class="tag">工程创客</span>
+              <h3>智能运输车智慧无线充电系统</h3>
             </div>
-            <p>使用 Python 整理实验数据，生成图表并输出结构化分析结果。</p>
+            <p>
+              参与无线充电模块设计与实现，完成工程创客训练项目，获得第八期“工程创客训练班”
+              优秀结业，积累电气系统调试与团队协作经验。
+            </p>
           </article>
           <article class="project">
             <div>
-              <span class="tag">校园工作</span>
-              <h3>活动宣传与组织</h3>
+              <span class="tag">赛车工程</span>
+              <h3>兴冀电车队制动系统设计</h3>
             </div>
-            <p>参与学院活动策划、材料撰写、视觉排版和现场执行。</p>
+            <p>
+              担任制动组组长，参与“长城-EV”号赛车制动系统整体架构设计与制动总成制造，
+              负责成本与制造分析，随队获得2025中国大学生电动方程式汽车大赛全国一等奖。
+            </p>
+          </article>
+          <article class="project">
+            <div>
+              <span class="tag">挑战杯</span>
+              <h3>数控机床误差模型拟合与智能补偿</h3>
+            </div>
+            <p>
+              作为第三负责人参与“智驭精工”项目，围绕数据驱动误差模型拟合与复合前馈补偿方法
+              开展研究，获得第十九届“挑战杯”全国大学生课外学术科技作品竞赛专项赛国家三等奖。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="honors" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Honors</p>
+          <h2>荣誉成果</h2>
+        </div>
+        <div class="honor-grid">
+          <span>2025中国大学生电动方程式汽车大赛全国一等奖</span>
+          <span>第十九届“挑战杯”专项赛国家三等奖</span>
+          <span>第十六届全国大学生数学竞赛三等奖</span>
+          <span>第二届全国ETF模拟投资菁英挑战赛三等奖</span>
+          <span>“建行杯”河北省大学生创新大赛铜奖</span>
+          <span>2024-2025学年国家励志奖学金</span>
+          <span>优秀学生干部、优秀共青团员、三好学生</span>
+          <span>一项实用新型专利受理</span>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Campus Work</p>
+          <h2>学生工作</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <h3>校团委团校主席 / 基层建设部主要负责人</h3>
+            <p>
+              统筹基层团组织建设、团员发展与管理、评优评先资格审核等工作，参与全校团青比、
+              团支部覆盖率等数据统计与分析。
+            </p>
+          </article>
+          <article>
+            <h3>制度流程优化</h3>
+            <p>
+              起草和修订新生团支部建立、新生转入、共青团工作考核评价等流程文件，
+              参与“红旗团支部”评分规则优化和基础团务培训。
+            </p>
+          </article>
+          <article>
+            <h3>大型活动统筹</h3>
+            <p>
+              参与“三站一场”迎新接站、红旗团支部展示暨表彰大会、团委书记述职会议等活动，
+              覆盖流程设计、物料准备、现场调度与协同执行。
+            </p>
           </article>
         </div>
       </section>
@@ -113,19 +212,19 @@
           <p class="eyebrow">Contact</p>
           <h2>保持联系</h2>
           <p>
-            你可以把这里替换成真实邮箱、微信、GitHub、公众号或简历链接。
+            出于隐私考虑，页面暂不公开手机号和学号。后续可以补充邮箱、简历下载链接或更多作品页面。
           </p>
         </div>
         <div class="contact-card">
-          <a href="mailto:your.email@example.com">your.email@example.com</a>
-          <span>WeChat: your_wechat_id</span>
-          <span>GitHub: github.com/yourname</span>
+          <a href="https://github.com/shen1950">github.com/shen1950</a>
+          <span>河北工业大学 · 电气工程学院</span>
+          <span>方向：新能源工程 / 智慧能源 / 工程设计</span>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>© 2026 你的名字. Built with care.</p>
+      <p>© 2026 任璐. Built with care.</p>
     </footer>
   </body>
 </html>
