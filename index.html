@@ -3,43 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>任璐 | 个人工作档案</title>
+    <title>任璐 | 个人经历索引</title>
     <meta
       name="description"
-      content="任璐的个人工作档案，按照本地工作文件夹分类展示学习、竞赛、团校基建、第二课堂、宣传、实践服务与求职材料。"
+      content="任璐的个人经历索引页，按照工作文件夹分类跳转到竞赛项目、课程、团校基建、第二课堂、宣传、实践服务和求职等专题页面。"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top">任璐 · 工作档案</a>
+      <a class="brand" href="./index.html">任璐 · 经历索引</a>
       <nav class="nav" aria-label="主导航">
-        <a href="#archive">档案分区</a>
-        <a href="#league-school">团校基建</a>
-        <a href="#timeline">学期线</a>
+        <a href="#archive">分类入口</a>
         <a href="#profile">个人简介</a>
         <a href="#contact">联系</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero">
+      <section class="hero index-hero">
         <div class="hero-copy">
-          <p class="eyebrow">Personal Work Archive</p>
-          <h1>把经历整理成<span>可继续生长的档案</span></h1>
+          <p class="eyebrow">Personal Experience Index</p>
+          <h1>我的经历，按文件夹<span>逐页展开</span></h1>
           <p class="hero-text">
-            这里按照我的本地工作文件夹方式组织网页内容：竞赛与项目、课程、团校基建、
-            第二课堂、宣传、实践服务、求职等模块分区展示。当前重点展开的是
-            <strong>02团校基建</strong>，用于记录从 2023 秋到 2026 春的团校工作脉络。
+            这个网站不再把所有内容堆在一个页面里，而是像我的工作文件夹一样，
+            通过索引入口进入不同专题。每个分类都是一个独立网页，可以继续扩展成作品集、
+            工作复盘、项目材料或成长记录。
           </p>
           <div class="stat-row" aria-label="个人亮点">
             <span><strong>河北工业大学</strong>电气工程学院</span>
             <span><strong>新能源科学与工程</strong>新能232班</span>
-            <span><strong>团校基建</strong>流程、数据与制度沉淀</span>
+            <span><strong>索引式主页</strong>分类跳转与持续更新</span>
           </div>
           <div class="hero-actions">
-            <a class="button primary" href="#league-school">查看团校基建</a>
-            <a class="button secondary" href="#archive">浏览档案分区</a>
+            <a class="button primary" href="#archive">进入分类入口</a>
+            <a class="button secondary" href="./pages/league-school.html">查看团校基建</a>
           </div>
         </div>
 
@@ -47,202 +45,76 @@
           <img src="./assets/yashen.jpg" alt="个人主页头像" />
           <div>
             <strong>任璐</strong>
-            <span>电气工程学院 / 新能源科学与工程</span>
+            <span>个人经历索引 / 持续建设中</span>
           </div>
         </div>
       </section>
 
       <section id="archive" class="section">
         <div class="section-heading">
-          <p class="eyebrow">Archive Map</p>
-          <h2>按照工作文件夹进行分块</h2>
+          <p class="eyebrow">Archive Entrances</p>
+          <h2>分类经历入口</h2>
           <p>
-            网页主体采用“文件夹索引 + 重点分区展开”的方式。后续可以继续把每个本地文件夹
-            扩展成独立页面或专题模块。
+            点击卡片即可进入对应专题页。当前已重点填充“02团校基建”，其他页面先搭好结构，
+            后续可以按文件夹逐步补内容。
           </p>
         </div>
-        <div class="folder-grid">
-          <article>
+
+        <div class="folder-grid index-grid">
+          <a class="folder-card" href="./pages/competitions.html">
             <span>00</span>
             <h3>竞赛与项目</h3>
             <p>科创竞赛、创新创业、工程项目、团队材料与成果沉淀。</p>
-          </article>
-          <article>
+            <em>进入页面</em>
+          </a>
+          <a class="folder-card" href="./pages/courses.html">
             <span>01</span>
             <h3>课程</h3>
             <p>课程学习、实验报告、专业课笔记与微专业材料。</p>
-          </article>
-          <article class="active-folder">
+            <em>进入页面</em>
+          </a>
+          <a class="folder-card active-folder" href="./pages/league-school.html">
             <span>02</span>
             <h3>团校基建</h3>
             <p>基层团建、团员发展、评优评先、青马工程、组织运行与工作规范。</p>
-          </article>
-          <article>
+            <em>已填充</em>
+          </a>
+          <a class="folder-card" href="./pages/second-classroom.html">
             <span>04</span>
             <h3>第二课堂</h3>
             <p>实践服务、活动参与、学分认定与成长记录。</p>
-          </article>
-          <article>
+            <em>进入页面</em>
+          </a>
+          <a class="folder-card" href="./pages/party.html">
             <span>05</span>
             <h3>党</h3>
             <p>发展对象、思想汇报、组织材料与学习记录。</p>
-          </article>
-          <article>
+            <em>进入页面</em>
+          </a>
+          <a class="folder-card" href="./pages/publicity.html">
             <span>07</span>
             <h3>宣传部</h3>
             <p>推送、海报、新闻稿、视频图片与宣传工作素材。</p>
-          </article>
-          <article>
+            <em>进入页面</em>
+          </a>
+          <a class="folder-card" href="./pages/others.html">
             <span>10</span>
             <h3>其他</h3>
             <p>简历、证件、临时材料和跨主题资料汇总。</p>
-          </article>
-          <article>
+            <em>进入页面</em>
+          </a>
+          <a class="folder-card" href="./pages/practice.html">
             <span>实践</span>
             <h3>实践服务</h3>
             <p>志愿服务、社会实践、团队实践和公益项目材料。</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="league-school" class="section feature-section">
-        <div class="section-heading">
-          <p class="eyebrow">02 League School Infrastructure</p>
-          <h2>团校基建：从事务执行到流程建设</h2>
-          <p>
-            这一部分基于第九届团校述职报告和各学期文件夹整理，重点记录校团委团校在基层团建、
-            青马工程、团员发展、评优评先、年度考核和组织运行中的工作沉淀。
-          </p>
-        </div>
-
-        <div class="focus-grid">
-          <article>
-            <h3>基层团建数据</h3>
-            <p>
-              建立团青比、团支部覆盖率、新生转入、毕业生转出等数据台账，为青马工程、
-              新发展团员、年度考核和荣誉评选提供基础数据。
-            </p>
-          </article>
-          <article>
-            <h3>团员发展与智慧团建</h3>
-            <p>
-              围绕新发展团员名额分配、入团考核、志愿书审核、身份认证、团籍问题处理等环节，
-              推动流程细化和问题闭环。
-            </p>
-          </article>
-          <article>
-            <h3>评优评先与证书体系</h3>
-            <p>
-              参与优秀团支部、优秀共青团员、优秀学生干部、红旗团支部等评选，沉淀材料收集、
-              多轮审核、反馈、公示和证书编号规则。
-            </p>
-          </article>
-          <article>
-            <h3>青马工程与实践育人</h3>
-            <p>
-              支撑青马开班、理论培训、红色实践、校地联动与志愿服务，推动实践成果手册化、
-              课程化和可复用化。
-            </p>
-          </article>
-          <article>
-            <h3>大型活动与会务统筹</h3>
-            <p>
-              参与三站一场迎新接站、组宣功能型组织成立大会、红旗团支部展示、团委书记述职会议等，
-              覆盖流程、物料、人员、会场和算分。
-            </p>
-          </article>
-          <article>
-            <h3>工作规范与干部培养</h3>
-            <p>
-              通过轮岗、部长分工、培训考核、值班管理、在线表格和工作手册，把经验转化为组织资产。
-            </p>
-          </article>
-        </div>
-
-        <div class="metric-strip" aria-label="团校基建关键数据">
-          <span><strong>360人</strong>2025秋新发展团员</span>
-          <span><strong>1016人</strong>2024-2025学年优秀学生干部</span>
-          <span><strong>829人</strong>2024-2025学年优秀共青团员</span>
-          <span><strong>77支 + 15支</strong>优秀团支部与红旗团支部</span>
-        </div>
-      </section>
-
-      <section id="timeline" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">2023 Autumn - 2026 Spring</p>
-          <h2>团校基建学期时间线</h2>
-        </div>
-        <div class="semester-list">
-          <article>
-            <div class="semester-head">
-              <span>2023 秋</span>
-              <h3>进入团校工作体系，接触评优与本册材料</h3>
-            </div>
-            <ul>
-              <li>整理 2024 届毕业生优团优干、审核说明、填写范例等基础材料。</li>
-              <li>接触团校本册与青马工程本册，开始理解基层团建材料的归档逻辑。</li>
-              <li>从“材料执行”切入，逐步熟悉评优评先、团务文书和组织资料结构。</li>
-            </ul>
-          </article>
-          <article>
-            <div class="semester-head">
-              <span>2024 春</span>
-              <h3>新发展团员流程与智慧团建规范化</h3>
-            </div>
-            <ul>
-              <li>围绕春季新发展团员，整理发展细则、工作人员细则、志愿书填写注意事项。</li>
-              <li>参与入团宣誓仪式、团费收缴、团中央基层建设工作提示等资料整理。</li>
-              <li>形成“通知发布、材料收集、资格审核、系统录入、问题反馈”的基础流程意识。</li>
-            </ul>
-          </article>
-          <article>
-            <div class="semester-head">
-              <span>2024 秋</span>
-              <h3>从单项任务扩展到基层团建全流程</h3>
-            </div>
-            <ul>
-              <li>推进新生团支部建立、新生团员转入、秋季新发展团员等关键团务工作。</li>
-              <li>参与红旗团支部展示评比、团委功能型组织成立大会、组宣本册材料汇编。</li>
-              <li>参与年度考核材料评分，覆盖理论学习、青马工程、主题团日、智慧团建等指标。</li>
-            </ul>
-          </article>
-          <article>
-            <div class="semester-head">
-              <span>2025 春</span>
-              <h3>毕业年级表彰与省级荣誉评审</h3>
-            </div>
-            <ul>
-              <li>围绕毕业生优秀团支部、优秀共青团员、优秀学生干部开展材料整理与名单核对。</li>
-              <li>参与省级优秀学生干部相关材料审核、面试组织、评分细则和桌牌物料准备。</li>
-              <li>进一步熟悉跨部门协同、评审公平性和材料佐证完整性要求。</li>
-            </ul>
-          </article>
-          <article>
-            <div class="semester-head">
-              <span>2025 秋</span>
-              <h3>团校主席任期：数据、制度、活动并行推进</h3>
-            </div>
-            <ul>
-              <li>发布并持续更新团青比和团支部覆盖率统计，用于青马、新发展团员、评优和年度考核。</li>
-              <li>修订新生转入、新生团支部建立、毕业生转出等流程文件，强调“严进严出”。</li>
-              <li>完成 360 名新发展团员，身份认证通过率 100%，并复盘培训时点、编号录入、档案组档等问题。</li>
-              <li>组织团员教育评议、年度团籍注册、优团优干评选、团支部手册抽查和智慧团建疑难处理。</li>
-              <li>统筹天津站迎新接站、红旗团支部展示、团委书记述职会议、自强之星与青年先锋材料函审。</li>
-            </ul>
-          </article>
-          <article>
-            <div class="semester-head">
-              <span>2026 春</span>
-              <h3>流程再设计：轮岗、减负与可复用沉淀</h3>
-            </div>
-            <ul>
-              <li>继续推进春季新发展团员、毕业生优团优干、毕业生团组织关系转接和部队入团问题处理。</li>
-              <li>围绕 2026 年各学院共青团工作考核评价指标体系，继续优化思想引领与基层团建评分标准。</li>
-              <li>落实干部轮岗和部长直接负责机制，把上一学期的经验转为可交接、可复盘的工作规范。</li>
-              <li>筹备团干部素质能力大赛、示范性入团仪式等大型活动，重点优化流程、降低重复劳动。</li>
-              <li>计划将基建部积累的工作记录转化为宣传内容，展示基层团建工作的幕后价值。</li>
-            </ul>
-          </article>
+            <em>进入页面</em>
+          </a>
+          <a class="folder-card" href="./pages/career.html">
+            <span>求职</span>
+            <h3>求职</h3>
+            <p>简历版本、岗位材料、面试准备和职业规划记录。</p>
+            <em>进入页面</em>
+          </a>
         </div>
       </section>
 
