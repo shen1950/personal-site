@@ -4,22 +4,288 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>01课程 | 任璐</title>
+    <meta
+      name="description"
+      content="任璐的课程专题页，按照机械设计制造及其自动化到新能源科学与工程的学习路径，整理课程学习、实验报告、课程设计、仿真训练和专业能力沉淀。"
+    />
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="../index.html">任璐 · 经历索引</a>
-      <nav class="nav"><a href="../index.html#archive">返回索引</a><a href="./league-school.html">团校基建</a></nav>
+      <nav class="nav" aria-label="主导航">
+        <a href="../index.html#archive">返回索引</a>
+        <a href="#overview">概览</a>
+        <a href="#modules">课程模块</a>
+        <a href="#timeline">学期线</a>
+      </nav>
     </header>
+
     <main>
       <section class="page-hero">
         <p class="eyebrow">01 Courses</p>
-        <h1>课程</h1>
-        <p>用于整理课程学习、实验报告、专业课笔记、微专业材料和阶段性学习成果。</p>
+        <h1>课程：从机械基础到新能源系统</h1>
+        <p>
+          这一页对应 <code>01课程</code> 文件夹。资料显示学习路径从机械设计制造及其自动化起步，
+          后转入新能源科学与工程，课程材料覆盖工程图学、机械导论、电路、数电、模电、信号与系统、
+          电机学、电力电子、自动控制、风光储微网、太阳能/风力发电、现代控制和课程设计仿真。
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#timeline">查看学期线</a>
+          <a class="button secondary" href="../index.html">返回首页</a>
+        </div>
       </section>
-      <section class="section placeholder-section">
-        <h2>待填充内容</h2>
-        <p>建议先补：信号与系统、自动控制原理、C语言与单片机、复杂装备数字孪生微专业。</p>
+
+      <section id="overview" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Learning Map</p>
+          <h2>学习地图</h2>
+          <p>
+            课程资料不仅是试卷和课件，更包含报告、课程设计、实验代码、仿真模型、PPT 汇报和文献综述。
+            它们和竞赛项目相互支撑：机械基础服务赛车和结构设计，新能源课程服务光伏、风电、储能和微电网项目。
+          </p>
+        </div>
+        <div class="metric-strip" aria-label="课程学习概览">
+          <span><strong>2条</strong>机械设计制造及其自动化 / 新能源科学与工程</span>
+          <span><strong>4学期</strong>新能源专业课程材料：2024秋至2026春</span>
+          <span><strong>多类</strong>实验报告、课程设计、仿真代码与汇报材料</span>
+          <span><strong>题库</strong>数学、电、物理、计算机、英语等复习资料库</span>
+        </div>
+      </section>
+
+      <section id="modules" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Course Modules</p>
+          <h2>课程模块</h2>
+        </div>
+        <div class="project-list">
+          <article class="project">
+            <div>
+              <span class="tag">机械基础</span>
+              <h3>工程图学、机械导论与科技安全</h3>
+            </div>
+            <p>
+              机械设计制造及其自动化阶段保留了工程图学、三维 CAD、机械设计制造及其自动化专业导论、
+              总体国家安全观等材料，形成了工程表达、机械结构理解和制造安全意识的早期基础。
+            </p>
+          </article>
+
+          <article class="project">
+            <div>
+              <span class="tag">电类基础</span>
+              <h3>电路、数字电子、模拟电子与信号系统</h3>
+            </div>
+            <p>
+              新能源专业阶段重点补强电类基础：电路理论基础实验、数字电子技术基础、模拟电子技术基础、
+              信号与系统等课程材料齐全，包含实验指导、实验报告、复习资料和 MATLAB 脚本。
+            </p>
+          </article>
+
+          <article class="project">
+            <div>
+              <span class="tag">嵌入式 / 单片机</span>
+              <h3>C语言与单片机综合设计</h3>
+            </div>
+            <p>
+              2024 秋 C语言与单片机材料包含作业、实验、课程设计、仿真程序和输出文件，涉及 STM32、
+              传感器、显示、通信、控制逻辑和 Proteus/Keil 类工程流程，是从编程到硬件控制的关键训练。
+            </p>
+          </article>
+
+          <article class="project">
+            <div>
+              <span class="tag">新能源系统</span>
+              <h3>风电、光伏、储能、分布式发电与微电网</h3>
+            </div>
+            <p>
+              2026 春课程集中在专业核心方向：风力发电原理与技术、太阳能发电原理及技术、
+              储能技术及应用、分布式发电与微电网、新能源电力系统分析等，材料包含实验、课程汇报、
+              可行性研究、共享储能论文和光伏/风电仿真。
+            </p>
+          </article>
+
+          <article class="project">
+            <div>
+              <span class="tag">控制与电力装备</span>
+              <h3>电机学、电力电子、自动控制与现代控制</h3>
+            </div>
+            <p>
+              2025 秋到 2026 春形成控制与电力装备主线：电机学、电力电子技术、自动控制原理、
+              新能源装备先进控制技术等课程，保留实验报告、MATLAB 代码、SPWM/整流实验、
+              现代控制理论实验和控制系统分析材料。
+            </p>
+          </article>
+
+          <article class="project">
+            <div>
+              <span class="tag">数据与智能</span>
+              <h3>统计数据建模、人工智能基础与光伏缺陷检测</h3>
+            </div>
+            <p>
+              统计数据建模和人工智能基础材料体现了数据建模能力向新能源场景迁移：包括课程论文、
+              光伏组件缺陷检测文献、视觉模型、红外图像缺陷检测和新能源电站智能识别方向报告。
+            </p>
+          </article>
+
+          <article class="project">
+            <div>
+              <span class="tag">课程项目</span>
+              <h3>“森息”自呼吸光伏座椅与通帆能源岛</h3>
+            </div>
+            <p>
+              太阳能发电课程中形成“森息”自呼吸光伏座椅创意设计、光伏发电系统设计报告和
+              MATLAB/Simulink 光伏仿真实验；分布式发电与微电网中形成“通帆能源岛”零碳园区示范项目。
+            </p>
+          </article>
+
+          <article class="project">
+            <div>
+              <span class="tag">职业与表达</span>
+              <h3>职业发展、学术英语与专业外语</h3>
+            </div>
+            <p>
+              课程材料中还保留职业发展报告、人物访谈、求职信、简历、学术英语、专业外语、
+              大学俄语等内容，支撑公开表达、技术阅读和职业规划。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="outputs" class="section feature-section">
+        <div class="section-heading">
+          <p class="eyebrow">Representative Outputs</p>
+          <h2>代表性课程成果</h2>
+        </div>
+        <div class="honor-grid">
+          <span>电路理论基础实验：受控源研究、实验报告与实验台资料</span>
+          <span>C语言与单片机：综合设计大作业、仿真程序和硬件控制工程文件</span>
+          <span>人工智能基础：基于视觉大模型的新能源电站光伏组件缺陷检测技术报告</span>
+          <span>新能源开发能力训练：课程设计报告与新能源开发能力培养材料</span>
+          <span>新能源专业创新能力培养：基于 HOMER Pro 的校园风光柴储微电网容量优化</span>
+          <span>新能源场站电气工程基础：场站设计方案、风机图形和课程汇报</span>
+          <span>太阳能发电原理及技术：“森息”自呼吸光伏座椅、离并网光伏系统设计和 Simulink 实验</span>
+          <span>风力发电原理与技术：风切变、塔影效应、风电机组优化控制和 SCADA 数据分析</span>
+          <span>储能技术及应用：共享储能运营模式与收益机制研究</span>
+          <span>分布式发电与微电网：通帆能源岛零碳园区示范项目可行性研究</span>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Skill Stack</p>
+          <h2>课程能力沉淀</h2>
+        </div>
+        <div class="focus-grid">
+          <article>
+            <h3>工程表达</h3>
+            <p>工程图学、三维 CAD、课程 PPT、设计报告和可行性研究报告。</p>
+          </article>
+          <article>
+            <h3>电气基础</h3>
+            <p>电路、数电、模电、电机学、电力电子和新能源场站电气工程。</p>
+          </article>
+          <article>
+            <h3>控制仿真</h3>
+            <p>信号与系统、自动控制、现代控制、MATLAB/Simulink 和课程实验代码。</p>
+          </article>
+          <article>
+            <h3>新能源系统</h3>
+            <p>太阳能、风力发电、储能、分布式发电、微电网和新能源电力系统分析。</p>
+          </article>
+          <article>
+            <h3>数据智能</h3>
+            <p>统计建模、人工智能基础、光伏缺陷检测、SCADA 数据分析和文献综述。</p>
+          </article>
+          <article>
+            <h3>资料管理</h3>
+            <p>按学期、课程、实验、作业、论文和复习资料归档，形成可复用的学习资产。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="timeline" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Semester Timeline</p>
+          <h2>学期线</h2>
+        </div>
+        <div class="semester-list">
+          <article>
+            <div class="semester-head">
+              <span>2023秋</span>
+              <h3>机械设计制造及其自动化起步</h3>
+            </div>
+            <ul>
+              <li>学习工程图学、机械设计制造及其自动化专业导论、中国近现代史纲要、职业发展等课程。</li>
+              <li>形成机械导论论文、生涯发展报告、人物访谈、艺术散步汇报等早期材料。</li>
+            </ul>
+          </article>
+          <article>
+            <div class="semester-head">
+              <span>2024春</span>
+              <h3>机械与通识能力补充</h3>
+            </div>
+            <ul>
+              <li>完成军事理论、劳动通论、中国传统文化导读、总体国家安全观等课程。</li>
+              <li>围绕“构筑科技安全屏障：机械领域的战略研究”等主题进行课程论文训练。</li>
+            </ul>
+          </article>
+          <article>
+            <div class="semester-head">
+              <span>2024秋</span>
+              <h3>转入新能源科学与工程后的基础补课</h3>
+            </div>
+            <ul>
+              <li>系统补修新能源专业导论、C语言与单片机、数字电子、电路实验、统计数据建模等课程。</li>
+              <li>完成单片机综合设计、工程伦理报告、新能源开发能力培养和电路实验报告。</li>
+            </ul>
+          </article>
+          <article>
+            <div class="semester-head">
+              <span>2025春</span>
+              <h3>电类基础与智能方向展开</h3>
+            </div>
+            <ul>
+              <li>学习电路理论基础、模拟电子、信号与系统、人工智能基础、新能源发电技术基础等课程。</li>
+              <li>形成光伏组件缺陷检测方向报告、新能源开发能力训练课程设计和创业基础风电项目材料。</li>
+            </ul>
+          </article>
+          <article>
+            <div class="semester-head">
+              <span>2025秋</span>
+              <h3>控制、电机、电力电子和场站设计</h3>
+            </div>
+            <ul>
+              <li>学习电机学、电力电子技术、自动控制原理、新能源场站电气工程基础、专业外语等课程。</li>
+              <li>完成 HOMER Pro 微电网容量优化、场站设计方案、自动控制实验和电力电子实验。</li>
+            </ul>
+          </article>
+          <article>
+            <div class="semester-head">
+              <span>2026春</span>
+              <h3>风光储微网与先进控制深化</h3>
+            </div>
+            <ul>
+              <li>学习风力发电、太阳能发电、储能技术、分布式发电与微电网、新能源装备先进控制等课程。</li>
+              <li>完成共享储能研究、通帆能源岛、森息光伏座椅、光伏系统仿真、风电 SCADA 分析和现代控制实验。</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section">
+        <div>
+          <p class="eyebrow">Next</p>
+          <h2>继续完善</h2>
+          <p>
+            下一步可以把“森息光伏座椅”“通帆能源岛”“HOMER 微电网优化”“风电 SCADA 分析”
+            分别拆成课程作品小页，并补充公开图片或图表。
+          </p>
+        </div>
+        <div class="contact-card">
+          <a href="../index.html">返回经历索引</a>
+          <span>当前专题：01课程</span>
+          <span>状态：已完成第一版内容填充</span>
+        </div>
       </section>
     </main>
   </body>
