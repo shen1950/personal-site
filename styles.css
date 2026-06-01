@@ -1,13 +1,14 @@
 :root {
-  --bg: #f6f7f3;
-  --ink: #1e2528;
-  --muted: #5d676b;
-  --line: #d8ded8;
-  --accent: #1d7c73;
-  --accent-strong: #115c56;
-  --warm: #f0b35a;
+  --bg: #f7f8f5;
+  --ink: #172123;
+  --muted: #657174;
+  --line: #dde4df;
+  --accent: #22786f;
+  --accent-strong: #125c55;
+  --warm: #e6aa4e;
   --panel: #ffffff;
-  --shadow: 0 18px 45px rgba(28, 42, 44, 0.12);
+  --soft: #eef5f2;
+  --shadow: 0 18px 48px rgba(23, 33, 35, 0.1);
 }
 
 * {
@@ -44,8 +45,8 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 18px clamp(20px, 5vw, 72px);
-  background: rgba(246, 247, 243, 0.88);
+  padding: 16px clamp(20px, 5vw, 72px);
+  background: rgba(247, 248, 245, 0.92);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(14px);
 }
@@ -57,6 +58,7 @@ a {
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
   gap: clamp(12px, 3vw, 30px);
   color: var(--muted);
   font-size: 15px;
@@ -72,12 +74,12 @@ main {
 }
 
 .hero {
-  min-height: calc(100vh - 72px);
+  min-height: calc(92vh - 72px);
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.7fr);
   align-items: center;
   gap: clamp(36px, 7vw, 92px);
-  padding: 48px 0 72px;
+  padding: 56px 0 76px;
 }
 
 .eyebrow {
@@ -128,6 +130,10 @@ h3 {
   font-size: 18px;
 }
 
+.hero-text strong {
+  color: var(--accent-strong);
+}
+
 .stat-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -140,7 +146,7 @@ h3 {
   min-height: 74px;
   padding: 14px 16px;
   color: var(--muted);
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.82);
   border: 1px solid var(--line);
   border-radius: 8px;
 }
@@ -167,6 +173,15 @@ h3 {
   border: 1px solid var(--accent-strong);
   border-radius: 8px;
   font-weight: 700;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    background 160ms ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(18, 92, 85, 0.16);
 }
 
 .button.primary {
@@ -183,7 +198,7 @@ h3 {
   display: grid;
   gap: 18px;
   align-self: center;
-  padding: 22px;
+  padding: 18px;
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -194,7 +209,7 @@ h3 {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 8px;
   background: #dce8e3;
 }
 
@@ -208,7 +223,7 @@ h3 {
 }
 
 .section {
-  padding: 72px 0;
+  padding: 76px 0;
   border-top: 1px solid var(--line);
 }
 
@@ -247,6 +262,7 @@ h3 {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
+  box-shadow: 0 8px 28px rgba(23, 33, 35, 0.04);
 }
 
 .skill-grid article,
@@ -313,6 +329,12 @@ h3 {
   font-weight: 800;
 }
 
+.folder-card h3,
+.focus-grid h3,
+.info-grid h3 {
+  margin-bottom: 8px;
+}
+
 .folder-grid .active-folder,
 .folder-card.active-folder {
   border-color: rgba(17, 92, 86, 0.55);
@@ -330,7 +352,7 @@ h3 {
 }
 
 .page-hero {
-  padding: 76px 0 64px;
+  padding: 82px 0 68px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -363,7 +385,7 @@ h3 {
   min-height: 84px;
   padding: 16px;
   color: var(--muted);
-  background: #e9f2ef;
+  background: var(--soft);
   border: 1px solid rgba(17, 92, 86, 0.18);
   border-radius: 8px;
 }
@@ -385,7 +407,7 @@ h3 {
   grid-template-columns: 0.9fr 1.4fr;
   gap: 24px;
   align-items: start;
-  padding: 22px 24px;
+  padding: 24px;
 }
 
 .tag {
@@ -480,6 +502,24 @@ h3 {
   overflow-wrap: anywhere;
 }
 
+.email-card {
+  gap: 10px;
+}
+
+.email-card a {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 10px 12px;
+  background: var(--soft);
+  border: 1px solid rgba(18, 92, 85, 0.12);
+  border-radius: 8px;
+}
+
+.email-card a:hover {
+  background: #e3efeb;
+}
+
 .contact-card span {
   color: var(--muted);
   overflow-wrap: anywhere;
@@ -516,6 +556,10 @@ footer p {
     padding-top: 42px;
   }
 
+  .page-hero {
+    padding-top: 54px;
+  }
+
   .profile-panel {
     max-width: 420px;
   }
@@ -539,9 +583,13 @@ footer p {
 
   .nav {
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 8px;
     font-size: 14px;
+  }
+
+  .nav a {
+    padding: 4px 0;
   }
 
   h1 {
@@ -550,5 +598,9 @@ footer p {
 
   .button {
     width: 100%;
+  }
+
+  .email-card a {
+    font-size: 14px;
   }
 }
