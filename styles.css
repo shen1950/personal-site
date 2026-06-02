@@ -164,6 +164,10 @@ h3 {
   gap: 14px;
 }
 
+.section-actions {
+  margin-top: 24px;
+}
+
 .button {
   display: inline-flex;
   min-height: 46px;
@@ -525,6 +529,96 @@ h3 {
   overflow-wrap: anywhere;
 }
 
+.energy-hero {
+  border-bottom-color: rgba(34, 120, 111, 0.28);
+}
+
+.energy-roadmap {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.energy-roadmap article {
+  min-height: 210px;
+  padding: 22px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 28px rgba(23, 33, 35, 0.04);
+}
+
+.energy-roadmap span {
+  display: inline-flex;
+  width: 42px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  color: #fff;
+  background: var(--accent-strong);
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.energy-roadmap p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.energy-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.energy-flow span {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  background: var(--soft);
+  border: 1px solid rgba(18, 92, 85, 0.14);
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.energy-flow strong {
+  color: var(--accent-strong);
+}
+
+.visual-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.visual-grid figure {
+  margin: 0;
+  overflow: hidden;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 28px rgba(23, 33, 35, 0.04);
+}
+
+.visual-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  display: block;
+  object-fit: contain;
+  padding: 10px;
+  background: #fff;
+}
+
+.visual-grid figcaption {
+  padding: 14px 16px 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 footer {
   width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
@@ -568,6 +662,8 @@ footer p {
   .info-grid,
   .folder-grid,
   .focus-grid,
+  .energy-roadmap,
+  .visual-grid,
   .stat-row,
   .honor-grid,
   .metric-strip {
